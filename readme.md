@@ -1,4 +1,4 @@
-#Stepper tester
+# Stepper tester
 
 ![preview 1](img/preview_1.jpg)
 
