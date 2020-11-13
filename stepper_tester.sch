@@ -49,7 +49,7 @@ $EndComp
 Text GLabel 3100 2250 2    50   Input ~ 0
 VDD_5V
 Text GLabel 6800 1200 1    50   Input ~ 0
-VDD_5V
+VDD_DRV
 $Comp
 L Device:R_Small R2
 U 1 1 5FAF5BF2
@@ -67,7 +67,7 @@ Wire Wire Line
 	6800 1450 6800 1500
 Wire Wire Line
 	6800 1500 7050 1500
-Text GLabel 6700 1500 0    50   Input ~ 0
+Text GLabel 6500 1500 0    50   Input ~ 0
 EN
 Wire Wire Line
 	6700 1500 6800 1500
@@ -125,8 +125,6 @@ Text GLabel 9100 1800 0    50   Input ~ 0
 1A
 Text GLabel 9100 1900 0    50   Input ~ 0
 2A
-Text GLabel 8400 2100 2    50   Input ~ 0
-VDD_5V
 Text GLabel 8400 2200 2    50   Input ~ 0
 GND
 Text GLabel 7050 1600 0    50   Input ~ 0
@@ -218,4 +216,134 @@ Wire Wire Line
 	950  2750 900  2750
 Text GLabel 1350 2850 0    50   Input ~ 0
 SLEEP
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5FAF7613
+P 1150 5050
+F 0 "J4" V 1022 5230 50  0000 L CNN
+F 1 "Conn_01x03" V 1113 5230 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1150 5050 50  0001 C CNN
+F 3 "~" H 1150 5050 50  0001 C CNN
+	1    1150 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 8400 2100 2    50   Input ~ 0
+VDD_DRV
+Text GLabel 1150 4850 1    50   Input ~ 0
+VDD_DRV
+Text GLabel 1050 4850 1    50   Input ~ 0
+VDD_5V
+Text GLabel 1250 4850 1    50   Input ~ 0
+VDD_3V3
+$Comp
+L Device:R_Small R5
+U 1 1 5FAF908A
+P 6600 1500
+F 0 "R5" H 6541 1454 50  0000 R CNN
+F 1 "100" H 6541 1545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6600 1500 50  0001 C CNN
+F 3 "~" H 6600 1500 50  0001 C CNN
+	1    6600 1500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3100 2050 2    50   Input ~ 0
+VDD_3V3
+Text GLabel 4150 950  3    50   Input ~ 0
+VM_VDD
+Text GLabel 5250 950  3    50   Input ~ 0
+GND
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FAFF5BE
+P 10800 850
+F 0 "H1" H 10900 896 50  0000 L CNN
+F 1 "MountingHole" H 10900 805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10800 850 50  0001 C CNN
+F 3 "~" H 10800 850 50  0001 C CNN
+	1    10800 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FAFFE89
+P 10800 1100
+F 0 "H2" H 10900 1146 50  0000 L CNN
+F 1 "MountingHole" H 10900 1055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10800 1100 50  0001 C CNN
+F 3 "~" H 10800 1100 50  0001 C CNN
+	1    10800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5FB06915
+P 5150 750
+F 0 "J8" V 5114 562 50  0000 R CNN
+F 1 "Conn_01x03" V 5023 562 50  0000 R CNN
+F 2 "posad:Socket5.5x2.1" H 5150 750 50  0001 C CNN
+F 3 "~" H 5150 750 50  0001 C CNN
+	1    5150 750 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5150 950  3    50   Input ~ 0
+VM_VDD
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5FB07C71
+P 4150 750
+F 0 "J5" V 4114 662 50  0000 R CNN
+F 1 "Conn_01x01" V 4023 662 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4150 750 50  0001 C CNN
+F 3 "~" H 4150 750 50  0001 C CNN
+	1    4150 750 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5FB0870B
+P 4150 1600
+F 0 "J6" V 4114 1512 50  0000 R CNN
+F 1 "Conn_01x01" V 4023 1512 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4150 1600 50  0001 C CNN
+F 3 "~" H 4150 1600 50  0001 C CNN
+	1    4150 1600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4150 1800 3    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5FB0933F
+P 4450 1600
+F 0 "J7" V 4414 1512 50  0000 R CNN
+F 1 "Conn_01x01" V 4323 1512 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4450 1600 50  0001 C CNN
+F 3 "~" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4450 1800 3    50   Input ~ 0
+GND
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FB096CF
+P 10800 1350
+F 0 "H3" H 10900 1396 50  0000 L CNN
+F 1 "MountingHole" H 10900 1305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10800 1350 50  0001 C CNN
+F 3 "~" H 10800 1350 50  0001 C CNN
+	1    10800 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FB09976
+P 10800 1600
+F 0 "H4" H 10900 1646 50  0000 L CNN
+F 1 "MountingHole" H 10900 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10800 1600 50  0001 C CNN
+F 3 "~" H 10800 1600 50  0001 C CNN
+	1    10800 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
