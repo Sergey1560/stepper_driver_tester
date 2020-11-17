@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name chinabluepill)(type KiCad)(uri ${KIPRJMOD}/libs/footprint/chinabluepill.pretty)(options "")(descr ""))
+  (lib (name power)(type KiCad)(uri ${KIPRJMOD}/libs/footprint/power.pretty)(options "")(descr ""))
 )

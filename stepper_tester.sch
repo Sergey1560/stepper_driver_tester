@@ -280,12 +280,12 @@ U 1 1 5FB06915
 P 5150 750
 F 0 "J8" V 5114 562 50  0000 R CNN
 F 1 "Conn_01x03" V 5023 562 50  0000 R CNN
-F 2 "posad:Socket5.5x2.1" H 5150 750 50  0001 C CNN
+F 2 "power:DC55x21THT" H 5150 750 50  0001 C CNN
 F 3 "~" H 5150 750 50  0001 C CNN
 	1    5150 750 
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5150 950  3    50   Input ~ 0
+Text GLabel 5050 950  3    50   Input ~ 0
 VM_VDD
 $Comp
 L Connector_Generic:Conn_01x01 J5
@@ -346,4 +346,6 @@ F 3 "~" H 10800 1600 50  0001 C CNN
 	1    10800 1600
 	1    0    0    -1  
 $EndComp
+Text GLabel 5150 950  3    50   Input ~ 0
+GND
 $EndSCHEMATC
